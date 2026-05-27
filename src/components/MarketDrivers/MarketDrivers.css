@@ -1,0 +1,26 @@
+.market-drivers {
+  margin-top: 20px;
+}
+
+.market-drivers__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.market-drivers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.market-drivers__item {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-muted);
+  border-radius: var(--radius-full);
+}

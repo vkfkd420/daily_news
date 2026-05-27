@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: Daily News Briefing Webhook
+  version: 1.0.0
+  description: 브리핑 JSON을 Daily News 앱으로 전송 (ngrok 등 공개 URL 필요)
+servers:
+  - url: https://YOUR-NGROK-OR-SERVER.example
+paths:
+  /api/briefings/import:
+    post:
+      operationId: saveDailyBriefing
+      summary: 오늘의 증시 브리핑 JSON 저장
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [briefing]
+              properties:
+                force:
+                  type: boolean
+                  description: 같은 날짜 덮어쓰기
+                briefing:
+                  type: object
+                  description: 프로젝트-뉴스 JSON 전체
+      responses:
+        '200':
+          description: 저장 성공

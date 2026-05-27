@@ -1,0 +1,50 @@
+.region-tabs {
+  display: flex;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 4px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.region-tabs__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  border-radius: var(--radius-md);
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+.region-tabs__btn:hover {
+  color: var(--ink);
+}
+
+.region-tabs__btn--active {
+  background: var(--surface);
+  color: var(--primary);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.region-tabs__count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--border);
+  color: var(--muted);
+}
+
+.region-tabs__btn--active .region-tabs__count {
+  background: var(--primary-soft);
+  color: var(--primary);
+}

@@ -1,0 +1,142 @@
+.import-briefing__open {
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  border-radius: var(--radius-md);
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+
+.import-briefing__open:hover {
+  background: var(--primary-hover);
+}
+
+.import-briefing__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.import-briefing__modal {
+  width: 100%;
+  max-width: 560px;
+  max-height: min(90dvh, 720px);
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.15);
+}
+
+.import-briefing__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.import-briefing__header h2 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.import-briefing__close {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  color: var(--muted);
+  border-radius: var(--radius-md);
+}
+
+.import-briefing__close:hover {
+  background: var(--surface-muted);
+}
+
+.import-briefing__steps {
+  margin: 0;
+  padding: 16px 20px 0 36px;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.import-briefing__steps strong {
+  color: var(--primary);
+}
+
+.import-briefing__textarea {
+  flex: 1;
+  min-height: 200px;
+  margin: 12px 20px 0;
+  padding: 12px 14px;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  resize: vertical;
+  outline: none;
+}
+
+.import-briefing__textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+.import-briefing__error {
+  margin: 10px 20px 0;
+  font-size: 0.8125rem;
+  color: var(--down);
+}
+
+.import-briefing__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 20px 20px;
+}
+
+.import-briefing__cancel {
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  border-radius: var(--radius-md);
+}
+
+.import-briefing__cancel:hover {
+  background: var(--surface-muted);
+}
+
+.import-briefing__submit {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  border-radius: var(--radius-md);
+}
+
+.import-briefing__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.briefing-page__empty-action .import-briefing__open,
+.briefing-page__mobile-bar .import-briefing__open {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .header .import-briefing__open {
+    display: none;
+  }
+}

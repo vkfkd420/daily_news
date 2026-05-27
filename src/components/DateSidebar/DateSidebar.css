@@ -1,0 +1,63 @@
+.date-sidebar {
+  flex-shrink: 0;
+  width: 220px;
+  padding: 20px 12px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+
+.date-sidebar__title {
+  padding: 0 12px 12px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.date-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date-sidebar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: background var(--transition), color var(--transition);
+}
+
+.date-sidebar__btn:hover {
+  background: var(--surface-muted);
+}
+
+.date-sidebar__btn--active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.date-sidebar__date {
+  font-size: 0.875rem;
+}
+
+.date-sidebar__count {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.date-sidebar__btn--active .date-sidebar__count {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .date-sidebar {
+    display: none;
+  }
+}

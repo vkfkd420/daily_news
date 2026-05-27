@@ -1,0 +1,139 @@
+{
+  "date": "2026-05-26",
+  "title": "데일리 글로벌 증시 브리핑",
+  "summary": "오늘은 실적보다 지정학이 시장을 움직이는 날.",
+  "marketFocus": [
+    { "rank": 1, "keyword": "중동 전쟁 리스크" },
+    { "rank": 2, "keyword": "유가" },
+    { "rank": 3, "keyword": "금리 기대 변화" },
+    { "rank": 4, "keyword": "반도체 모멘텀" }
+  ],
+  "news": {
+    "korea": [
+      {
+        "rank": 1,
+        "importance": 5,
+        "stars": "★★★★★",
+        "title": "한국은행 금리 동결 유력, 하반기 긴축 가능성",
+        "summary": "유가 상승과 원화 약세 영향으로 금리 정책 변화 가능성이 커지고 있습니다.",
+        "investmentPoint": "성장주 단기 변동성 확대 가능",
+        "impactSectors": {
+          "positive": ["은행", "보험", "배당주"],
+          "negative": ["성장주", "부동산"]
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-koreas-central-bank-hold-key-rate-may-28-hikes-expected-q3-2026-05-26/"
+        }
+      },
+      {
+        "rank": 2,
+        "importance": 5,
+        "stars": "★★★★★",
+        "title": "중동 긴장 재확대 → 유가 급등",
+        "summary": "미국-이란 긴장으로 글로벌 유가 상승, 한국 증시에 부담 요인입니다.",
+        "investmentPoint": "정유·방산 수혜 가능",
+        "impactSectors": {
+          "positive": ["정유", "방산"],
+          "negative": ["항공", "화학", "소비"]
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-05-26/"
+        }
+      },
+      {
+        "rank": 3,
+        "importance": 4,
+        "stars": "★★★★☆",
+        "title": "원화 약세 지속",
+        "summary": "달러 강세와 지정학 리스크로 외국인 수급 부담이 이어지고 있습니다.",
+        "investmentPoint": "수출주 상대적 방어",
+        "impactSectors": {
+          "positive": ["반도체", "자동차"],
+          "negative": ["내수주"]
+        },
+        "source": { "name": "Market Analysis", "url": "" }
+      },
+      {
+        "rank": 4,
+        "importance": 4,
+        "stars": "★★★★☆",
+        "title": "반도체 중심 한국 증시 체력 유지",
+        "summary": "한국 증시는 여전히 반도체 수출 모멘텀 중심으로 움직이고 있습니다.",
+        "investmentPoint": "삼성전자/SK하이닉스 체크",
+        "impactSectors": {
+          "positive": ["반도체", "전자부품"],
+          "negative": []
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-koreas-central-bank-hold-key-rate-may-28-hikes-expected-q3-2026-05-26/"
+        }
+      }
+    ],
+    "usa": [
+      {
+        "rank": 1,
+        "importance": 5,
+        "stars": "★★★★★",
+        "title": "미국-이란 충돌 리스크 확대",
+        "summary": "위험자산 회피 심리가 강해지며 글로벌 증시 변동성이 확대되고 있습니다.",
+        "investmentPoint": "나스닥 단기 조정 가능",
+        "impactSectors": {
+          "positive": ["에너지", "방산"],
+          "negative": ["기술주", "성장주"]
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-05-26/"
+        }
+      },
+      {
+        "rank": 2,
+        "importance": 5,
+        "stars": "★★★★★",
+        "title": "유가 상승 → 인플레이션 재점화 우려",
+        "summary": "연준 금리 인하 기대가 늦춰질 가능성이 커졌습니다.",
+        "investmentPoint": "기술주 밸류 부담",
+        "impactSectors": {
+          "positive": ["에너지"],
+          "negative": ["나스닥", "AI 관련주"]
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-05-26/"
+        }
+      },
+      {
+        "rank": 3,
+        "importance": 4,
+        "stars": "★★★★☆",
+        "title": "미국 제조업 예상보다 강세",
+        "summary": "경제는 강하지만 금리 인하 기대는 후퇴하는 구간입니다.",
+        "investmentPoint": "성장주 부담",
+        "impactSectors": {
+          "positive": ["산업재"],
+          "negative": ["기술주"]
+        },
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/us-manufacturing-activity-rises-four-year-high-may-sp-global-survey-shows-2026-05-21/"
+        }
+      },
+      {
+        "rank": 4,
+        "importance": 4,
+        "stars": "★★★★☆",
+        "title": "달러 강세 지속",
+        "summary": "안전자산 선호 심리 강화.",
+        "investmentPoint": "신흥국 증시 부담",
+        "impactSectors": {
+          "positive": ["달러 자산"],
+          "negative": ["신흥국 증시"]
+        },
+        "source": { "name": "Market Analysis", "url": "" }
+      }
+    ]
+  }
+}

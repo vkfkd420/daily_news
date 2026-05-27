@@ -1,0 +1,39 @@
+# OpenAI API + GitHub push (PC 없이 매일 실행)
+# Secrets: OPENAI_API_KEY, GITHUB_TOKEN
+# Plus만 쓸 때는 이 workflow 대신 로컬 `npm run briefing:push-github` 사용
+
+name: Daily briefing to GitHub
+
+on:
+  schedule:
+    # 08:30 KST ≈ 23:30 UTC (전일)
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate briefing (OpenAI API)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          BRIEFING_SYNC_MODE: openai
+        run: npm run briefing:sync:force
+
+      - name: Push to same repo (data/briefings/)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_BRANCH: ${{ github.ref_name }}
+        run: npm run briefing:push-github

@@ -1,0 +1,85 @@
+.portfolio-insight {
+  margin-top: 36px;
+  padding: 20px 22px;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.portfolio-insight__title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.portfolio-insight__message {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.portfolio-insight__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.portfolio-insight__sectors-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.portfolio-insight__sectors--up .portfolio-insight__sectors-label {
+  color: var(--up);
+}
+
+.portfolio-insight__sectors--down .portfolio-insight__sectors-label {
+  color: var(--down);
+}
+
+.portfolio-insight__sectors ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.portfolio-insight__sectors li {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.portfolio-insight__sectors--up li {
+  background: var(--up-soft);
+  color: var(--up);
+}
+
+.portfolio-insight__sectors--down li {
+  background: var(--down-soft);
+  color: var(--down);
+}
+
+.portfolio-insight__strategy {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.portfolio-insight__strategy-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.portfolio-insight__strategy p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
